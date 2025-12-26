@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aihelp.me | Discover the Best AI Tools - Let AI Be Your Productivity Assistant</title>
+  <meta name="description" content="aihelp.me - Discover the best AI tools to make work easier and more efficient. Curated global AI tools with intelligent recommendations, one-click access to help you quickly find AI assistants that boost productivity.">
+  <meta name="keywords" content="AI tools, AI directory, artificial intelligence tools, AI tool recommendations, AI tool comparison, AI tool search, AI productivity tools, AI tools directory, AI tools comparison, best AI tools">
+  <link rel="canonical" href="https://aihelp.me/">
+  <meta property="og:title" content="aihelp.me | Discover the Best AI Tools - Let AI Be Your Productivity Assistant">
+  <meta property="og:description" content="Discover the best AI tools to make work easier and more efficient. Curated global AI tools with intelligent recommendations, one-click access.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aihelp.me/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=800&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="aihelp.me | Discover the Best AI Tools - Let AI Be Your Productivity Assistant">
+  <meta name="twitter:description" content="Discover the best AI tools to make work easier and more efficient. Curated global AI tools with intelligent recommendations, one-click access.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=800&fit=crop">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><rect width=%27100%27 height=%27100%27 rx=%2718%27 fill=%27%23222%27/><text x=%2750%27 y=%2758%27 font-size=%2752%27 text-anchor=%27middle%27 fill=%27%23f8fafc%27>AI</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: "#ffffff",
+            foreground: "#0f172a",
+            primary: { DEFAULT: "#6366f1", foreground: "#ffffff" },
+            secondary: { DEFAULT: "#8b5cf6", foreground: "#ffffff" },
+            accent: { DEFAULT: "#a855f7", foreground: "#ffffff" },
+            muted: { DEFAULT: "#f8fafc", foreground: "#64748b" },
+            card: { DEFAULT: "#ffffff", foreground: "#0f172a" },
+            border: "#e2e8f0",
+            gradient: {
+              start: "#6366f1",
+              middle: "#8b5cf6",
+              end: "#a855f7"
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::selection { background: #c4b5fd; color: #0f172a; }
+    .glass {
+      backdrop-filter: blur(16px) saturate(180%);
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+    }
+    .grid-auto-fill { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .hover-lift {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hover-lift:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 min-h-screen">
+  <div id="app" class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-30 glass border-b border-slate-200/50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-xl gradient-bg text-white flex items-center justify-center font-bold text-lg shadow-lg hover-lift">AI</div>
+          <div>
+            <p class="font-semibold text-lg">aihelp.me</p>
+            <p class="text-sm text-slate-600" data-i18n="subtitle">Discover AI Tools, Boost Efficiency</p>
+          </div>
+        </div>
+        <nav class="ml-auto hidden md:flex items-center gap-2 text-sm font-medium">
+          <a href="#home" class="px-4 py-2 rounded-lg hover:bg-slate-100/50 hover:text-primary transition-all duration-300">Home</a>
+          <a href="#categories" class="px-4 py-2 rounded-lg hover:bg-slate-100/50 hover:text-primary transition-all duration-300" data-i18n="navCategories">分类</a>
+          <a href="#tools" class="px-4 py-2 rounded-lg hover:bg-slate-100/50 hover:text-primary transition-all duration-300" data-i18n="navTools">全部工具</a>
+          <a href="#about" class="px-4 py-2 rounded-lg hover:bg-slate-100/50 hover:text-primary transition-all duration-300" data-i18n="navAbout">关于</a>
+        </nav>
+        <div class="ml-4 flex items-center gap-2">
+          <button id="lang-toggle" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg gradient-bg text-white text-sm hover-lift focus-visible:ring-2 focus-visible:ring-primary/50 transition-all duration-300">
+            <i data-lucide="languages" class="h-4 w-4"></i>
+            <span id="lang-label">EN / 中文</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1" id="home">
+      <section class="bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 border-b border-slate-100/50">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16 grid lg:grid-cols-2 gap-10 items-center">
+          <div class="space-y-6">
+            <p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-primary bg-primary/10 px-4 py-2 rounded-full border border-primary/20 hover-lift">
+              <i data-lucide="sparkles" class="h-4 w-4"></i><span data-i18n="badge">Curated AI Tools Platform</span>
+            </p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+              <span class="gradient-text" data-i18n="heroTitle">Discover, Filter, Compare 100+ AI Tools</span>
+            </h1>
+            <p class="text-lg text-slate-700" data-i18n="heroDesc">Carefully curated for global users with bilingual support, helping you quickly find the perfect AI productivity tools.</p>
+            <div class="flex flex-wrap gap-3">
+              <button class="inline-flex items-center gap-2 px-5 py-3 rounded-lg gradient-bg text-white text-sm hover-lift focus-visible:ring-2 focus-visible:ring-primary/50 transition-all duration-300" data-action="scroll-tools">
+                <i data-lucide="compass" class="h-4 w-4"></i><span data-i18n="ctaExplore">Start Exploring</span>
+              </button>
+              <button class="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-200 text-sm bg-white hover:bg-slate-50 focus-visible:ring-2 focus-visible:ring-primary/50 transition-all duration-300" data-action="scroll-about">
+                <i data-lucide="info" class="h-4 w-4"></i><span data-i18n="ctaAbout">Learn More</span>
+              </button>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+              <div class="p-4 rounded-xl border border-slate-200/50 bg-white/80 backdrop-blur-sm hover-lift">
+                <p class="font-semibold" data-i18n="statTools">100+ Curated Tools</p>
+                <p class="text-sm text-slate-600" data-i18n="statToolsDesc">Covering All Scenarios</p>
+              </div>
+              <div class="p-4 rounded-xl border border-slate-200/50 bg-white/80 backdrop-blur-sm hover-lift">
+                <p class="font-semibold" data-i18n="statLang">Smart Recommendations</p>
+                <p class="text-sm text-slate-600" data-i18n="statLangDesc">Precisely Match Needs</p>
+              </div>
+              <div class="p-4 rounded-xl border border-slate-200/50 bg-white/80 backdrop-blur-sm hover-lift">
+                <p class="font-semibold" data-i18n="statSEO">One-Click Access</p>
+                <p class="text-sm text-slate-600" data-i18n="statSEODesc">Quick Access to Official Sites</p>
+              </div>
+              <div class="p-4 rounded-xl border border-slate-200/50 bg-white/80 backdrop-blur-sm hover-lift">
+                <p class="font-semibold" data-i18n="statNext">Continuous Updates</p>
+                <p class="text-sm text-slate-600" data-i18n="statNextDesc">Discover Latest Tools</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-indigo-200/50 blur-2xl"></div>
+            <div class="absolute -bottom-10 -right-4 h-32 w-32 rounded-full bg-purple-200/50 blur-2xl"></div>
+            <div class="relative rounded-2xl border border-slate-200/50 shadow-2xl bg-white/80 backdrop-blur-sm overflow-hidden hover-lift">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=800&fit=crop" alt="AI tools and digital innovation" class="w-full h-64 object-cover">
+              <div class="p-5 space-y-3">
+                <p class="text-xs uppercase tracking-wide text-primary" data-i18n="highlightTitle">Popular Tool Recommendations</p>
+                <p class="text-lg font-semibold">aihelp.me Curated List</p>
+                <p class="text-sm text-slate-700" data-i18n="highlightDesc">Covering four core scenarios: LLM, image generation, code development, and design creation, immediately boost work efficiency.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs">Writing Assistant</span>
+                  <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-xs">Design Tools</span>
+                  <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs">Productivity</span>
+                  <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs">Programming Assistant</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tools" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 space-y-6">
+        <div class="flex flex-col lg:flex-row gap-4 lg:items-center justify-between">
+          <div>
+            <p class="text-sm text-primary font-semibold" data-i18n="sectionLabel">Smart Discovery</p>
+            <h2 class="text-2xl font-bold" data-i18n="sectionTitle">Easily Find the Perfect AI Tool for You</h2>
+            <p class="text-sm text-slate-700" data-i18n="sectionDesc">Browse by categories and use smart search to quickly find AI tools that match your needs, making selection simple and efficient.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button class="px-4 py-2 rounded-lg border border-slate-200 text-sm bg-white hover:bg-slate-50 focus-visible:ring-2 focus-visible:ring-primary/50 transition-all duration-300" data-action="reset-filters">
+              <i data-lucide="rotate-ccw" class="h-4 w-4"></i><span data-i18n="reset">Choose Again</span>
+            </button>
+          </div>
+        </div>
+        <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
+          <div class="md:col-span-2 lg:col-span-2">
+            <label class="text-sm font-medium text-slate-700 flex items-center gap-2 mb-2"><i data-lucide="search" class="h-4 w-4"></i><span data-i18n="searchLabel">Find Tools</span></label>
+            <div class="relative">
+              <input id="search" type="text" placeholder="Search ChatGPT, Midjourney, code development tools..." class="w-full rounded-xl border border-slate-200 px-4 py-3 pr-12 text-sm focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300" />
+              <i data-lucide="command" class="absolute right-3 top-3 h-5 w-5 text-slate-400"></i>
+            </div>
+          </div>
+          <div>
+            <label class="text-sm font-medium text-slate-700 mb-2 inline-flex items-center gap-2"><i data-lucide="filter" class="h-4 w-4"></i><span data-i18n="categoryLabel">Category</span></label>
+            <select id="category" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300">
+              <option value="" data-i18n="all">All Categories</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-medium text-slate-700 mb-2 inline-flex items-center gap-2"><i data-lucide="list-filter" class="h-4 w-4"></i><span data-i18n="sortLabel">Sort By</span></label>
+            <select id="sort" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300">
+              <option value="hot" data-i18n="sortHot">Most Popular</option>
+              <option value="new" data-i18n="sortNew">Latest</option>
+              <option value="name" data-i18n="sortName">Name A-Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 text-xs" id="tag-container"></div>
+        <div id="result-stats" class="text-sm text-slate-700"></div>
+        <div id="tool-grid" class="grid gap-4 grid-auto-fill"></div>
+      </section>
+      <section id="categories" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm text-primary font-semibold" data-i18n="catLabel">Tool Categories</p>
+            <h2 class="text-2xl font-bold" data-i18n="catTitle">Browse by Usage Scenario</h2>
+          </div>
+        </div>
+        <div id="category-grid" class="grid gap-4 md:grid-cols-3 lg:grid-cols-4"></div>
+      </section>
+      <section id="about" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 space-y-4 border-t border-slate-100/50">
+        <p class="text-sm text-primary font-semibold" data-i18n="aboutLabel">About aihelp.me</p>
+        <h2 class="text-2xl font-bold" data-i18n="aboutTitle">Making AI Tool Selection Simple</h2>
+        <p class="text-sm text-slate-700" data-i18n="aboutDesc">We carefully curate high-quality AI tools from around the world and use intelligent categorization and recommendation systems to help you quickly find the most suitable tools, improve work efficiency, and enjoy the convenience brought by AI.</p>
+        <ul class="list-disc text-sm text-slate-700 pl-5 space-y-2">
+          <li data-i18n="aboutPoint1">Strictly screened, only recommend quality AI tools</li>
+          <li data-i18n="aboutPoint2">Clear categorization, quickly find needed tools</li>
+          <li data-i18n="aboutPoint3">One-click access, direct visit to official websites</li>
+          <li data-i18n="aboutPoint4">Continuously updated, discover the latest AI tools</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="border-t border-slate-200/50 py-6">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-600">
+        <div class="flex items-center gap-2">
+          <i data-lucide="globe" class="h-4 w-4"></i>
+          <span>aihelp.me · Curated AI Tools</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#home" class="hover:text-primary transition-colors duration-300" data-i18n="footerBack">Back to Top</a>
+          <span class="text-slate-400">·</span>
+          <span data-i18n="footerSEO">Curated Tools | Smart Recommendations | Continuous Updates</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <dialog id="detail-dialog" class="rounded-2xl p-0 w-11/12 max-w-3xl shadow-2xl border border-slate-200/50 backdrop:bg-black/30">
+    <div class="flex justify-between items-center px-5 py-4 border-b border-slate-200/50">
+      <div>
+        <p class="text-xs uppercase tracking-wide text-primary" id="detail-category"></p>
+        <h3 class="text-xl font-bold" id="detail-title"></h3>
+      </div>
+      <button class="rounded-md p-2 hover:bg-slate-100/50 transition-colors duration-300" data-action="close-detail"><i data-lucide="x" class="h-5 w-5"></i></button>
+    </div>
+    <div class="p-5 space-y-4">
+      <p class="text-slate-700 text-sm" id="detail-desc"></p>
+      <div class="flex flex-wrap gap-2 text-xs" id="detail-tags"></div>
+      <a id="detail-link" href="#" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg gradient-bg text-white text-sm hover-lift focus-visible:ring-2 focus-visible:ring-primary/50 transition-all duration-300">
+        <i data-lucide="external-link" class="h-4 w-4"></i><span data-i18n="visit">Visit Official Site</span>
+      </a>
+      <div class="text-xs text-slate-600" id="detail-meta"></div>
+    </div>
+  </dialog>
+  <script>
+const i18nMap = {
+  en: {
+    subtitle: "Discover AI Tools, Boost Efficiency",
+    navCategories: "Categories",
+    navTools: "All Tools",
+    navAbout: "About",
+    badge: "Curated AI Tools Platform",
+    heroTitle: "Let AI Be Your Capable Assistant",
+    heroDesc: "Carefully selected high-quality AI tools from around the world with intelligent recommendations to help you quickly improve work efficiency and make AI your helpful companion.",
+    ctaExplore: "Start Exploring",
+    ctaAbout: "Learn More",
+    statTools: "100+ Curated Tools",
+    statToolsDesc: "Covering All Scenarios",
+    statLang: "Smart Recommendations",
+    statLangDesc: "Precisely Match Needs",
+    statSEO: "One-Click Access",
+    statSEODesc: "Quick Access to Official Sites",
+    statNext: "Continuous Updates",
+    statNextDesc: "Discover Latest Tools",
+    sectionLabel: "Smart Discovery",
+    sectionTitle: "Easily Find the Perfect AI Tool for You",
+    sectionDesc: "Browse by categories and use smart search to quickly find AI tools that match your needs, making selection simple and efficient.",
+    reset: "Choose Again",
+    searchLabel: "Find Tools",
+    categoryLabel: "Category",
+    sortLabel: "Sort By",
+    sortHot: "Most Popular",
+    sortNew: "Latest",
+    sortName: "Name A-Z",
+    all: "All Categories",
+    catLabel: "Tool Categories",
+    catTitle: "Browse by Usage Scenario",
+    aboutLabel: "About aihelp.me",
+    aboutTitle: "Making AI Tool Selection Simple",
+    aboutDesc: "We carefully curate high-quality AI tools from around the world and use intelligent categorization and recommendation systems to help you quickly find the most suitable tools, improve work efficiency, and enjoy the convenience brought by AI.",
+    aboutPoint1: "Strictly screened, only recommend quality AI tools",
+    aboutPoint2: "Clear categorization, quickly find needed tools",
+    aboutPoint3: "One-click access, direct visit to official websites",
+    aboutPoint4: "Continuously updated, discover the latest AI tools",
+    footerBack: "Back to Top",
+    footerSEO: "Curated Tools | Smart Recommendations | Continuous Updates",
+    highlightTitle: "Popular Tool Recommendations",
+    highlightDesc: "Selected writing, design, programming, and productivity tools to help you work more efficiently and make work easier.",
+    visit: "Visit Official Site"
+  },
+  zh: {
+    subtitle: "发现AI工具，提升效率",
+    navCategories: "分类",
+    navTools: "全部工具",
+    navAbout: "关于",
+    badge: "精选AI工具推荐平台",
+    heroTitle: "让AI成为您的得力助手",
+    heroDesc: "精选全球优质AI工具，智能推荐，帮您快速提升工作效率，让AI成为您的贴心助手。",
+    ctaExplore: "开始探索",
+    ctaAbout: "了解更多",
+    statTools: "100+ 精选工具",
+    statToolsDesc: "覆盖各类应用场景",
+    statLang: "智能推荐",
+    statLangDesc: "精准匹配需求",
+    statSEO: "一键直达",
+    statSEODesc: "快速访问官网",
+    statNext: "持续更新",
+    statNextDesc: "发现最新工具",
+    sectionLabel: "智能发现",
+    sectionTitle: "轻松找到最适合的AI工具",
+    sectionDesc: "通过分类浏览和智能搜索，快速找到符合您需求的AI工具，让选择变得简单高效。",
+    reset: "重新选择",
+    searchLabel: "查找工具",
+    categoryLabel: "分类",
+    sortLabel: "排序",
+    sortHot: "热门",
+    sortNew: "最新",
+    sortName: "名称",
+    all: "全部",
+    catLabel: "工具分类",
+    catTitle: "按使用场景浏览",
+    aboutLabel: "关于 aihelp.me",
+    aboutTitle: "让AI工具选择变得简单",
+    aboutDesc: "我们精心筛选全球优质AI工具，通过智能分类和推荐系统，帮助您快速找到最适合的工具，提升工作效率，享受AI带来的便利。",
+    aboutPoint1: "严格筛选，只推荐优质AI工具",
+    aboutPoint2: "分类清晰，快速找到所需工具",
+    aboutPoint3: "一键直达，直接访问官方网站",
+    aboutPoint4: "持续更新，发现最新AI工具",
+    footerBack: "返回顶部",
+    footerSEO: "精选工具 | 智能推荐 | 持续更新",
+    highlightTitle: "热门工具推荐",
+    highlightDesc: "精选写作、设计、编程、效率工具，助您事半功倍，让工作更轻松高效。",
+    visit: "访问官网"
+  }
+};
+const state = {
+  lang: "en",
+  search: "",
+  category: "",
+  sort: "hot",
+  tag: "",
+};
+const tools = [
+{id:1,nameEn:"ChatGPT",nameZh:"ChatGPT",category:"LLM",taglineEn:"General-purpose conversational AI",taglineZh:"通用对话式AI",descEn:"Conversational agent by OpenAI for ideation and coding assistance.",descZh:"由OpenAI提供的通用对话与编程辅助。",url:"https://chatgpt.com",tags:["chat","productivity"],popularity:99,created:"2022-11-30"},
+{id:2,nameEn:"Claude",nameZh:"Claude",category:"LLM",taglineEn:"Helpful, honest, harmless assistant",taglineZh:"安全友好的助手",descEn:"Anthropic's LLM known for safety and long context.",descZh:"Anthropic推出，强调安全与长上下文。",url:"https://claude.ai",tags:["chat","analysis"],popularity:95,created:"2023-03-01"},
+{id:3,nameEn:"Gemini",nameZh:"Gemini",category:"LLM",taglineEn:"Google multimodal AI",taglineZh:"谷歌多模态AI",descEn:"Multimodal reasoning with text, image, and code.",descZh:"支持文本、图片和代码的多模态推理。",url:"https://gemini.google.com",tags:["multimodal","research"],popularity:92,created:"2023-12-01"},
+{id:4,nameEn:"Mistral Large",nameZh:"Mistral Large",category:"LLM",taglineEn:"Efficient LLM",taglineZh:"高效大模型",descEn:"European model focused on efficiency and openness.",descZh:"来自欧洲，强调高效与开放。",url:"https://mistral.ai",tags:["open","fast"],popularity:88,created:"2024-02-15"},
+{id:5,nameEn:"Perplexity",nameZh:"Perplexity",category:"Search",taglineEn:"AI answer engine",taglineZh:"AI回答引擎",descEn:"Cited answers with web grounding for research.",descZh:"具备引用的AI搜索问答。",url:"https://perplexity.ai",tags:["search","research"],popularity:96,created:"2023-01-15"},
+{id:6,nameEn:"You.com",nameZh:"You.com",category:"Search",taglineEn:"Private AI search",taglineZh:"隐私AI搜索",descEn:"Customizable AI search with apps and snippets.",descZh:"可定制的AI搜索，支持插件与摘要。",url:"https://you.com",tags:["search","privacy"],popularity:82,created:"2022-06-01"},
+{id:7,nameEn:"Phind",nameZh:"Phind",category:"Dev",taglineEn:"AI for developers",taglineZh:"开发者AI搜索",descEn:"Fast coding search with deep technical grounding.",descZh:"面向开发者的技术搜索与代码回答。",url:"https://phind.com",tags:["code","search"],popularity:90,created:"2023-04-01"},
+{id:8,nameEn:"Cursor",nameZh:"Cursor IDE",category:"Dev",taglineEn:"AI-first editor",taglineZh:"AI优先的编辑器",descEn:"Code editor with inline AI pair programming.",descZh:"内置AI结对编程的代码编辑器。",url:"https://cursor.sh",tags:["editor","pair"],popularity:94,created:"2023-05-10"},
+{id:9,nameEn:"Replit Agent",nameZh:"Replit Agent",category:"Dev",taglineEn:"Cloud coding AI",taglineZh:"云端编码AI",descEn:"AI agent that edits and runs code in the cloud.",descZh:"在云端修改与运行代码的AI代理。",url:"https://replit.com",tags:["cloud","code"],popularity:84,created:"2024-03-01"},
+{id:10,nameEn:"GitHub Copilot",nameZh:"GitHub Copilot",category:"Dev",taglineEn:"Code completion",taglineZh:"AI代码补全",descEn:"Context-aware code suggestions powered by OpenAI.",descZh:"基于上下文的AI代码补全。",url:"https://github.com/features/copilot",tags:["editor","code"],popularity:97,created:"2021-10-01"},
+{id:11,nameEn:"Codeium",nameZh:"Codeium",category:"Dev",taglineEn:"Free AI coding",taglineZh:"免费AI编码",descEn:"AI autocomplete and chat for IDEs.",descZh:"面向IDE的免费AI补全与聊天。",url:"https://codeium.com",tags:["code","editor"],popularity:83,created:"2022-09-01"},
+{id:12,nameEn:"Windsurf",nameZh:"Windsurf",category:"Dev",taglineEn:"Multi-file AI agent",taglineZh:"多文件AI代理",descEn:"AI IDE with project-wide reasoning.",descZh:"具备项目级推理的AI IDE。",url:"https://codeium.com/windsurf",tags:["ide","agent"],popularity:80,created:"2024-01-20"},
+{id:13,nameEn:"V0 by Vercel",nameZh:"V0",category:"Design",taglineEn:"UI from prompts",taglineZh:"提示词生成UI",descEn:"Generate React/Tailwind UI from text prompts.",descZh:"用提示词生成React/Tailwind界面。",url:"https://v0.dev",tags:["ui","tailwind"],popularity:89,created:"2023-12-05"},
+{id:14,nameEn:"Galileo AI",nameZh:"Galileo AI",category:"Design",taglineEn:"Design to code",taglineZh:"设计转代码",descEn:"Convert design ideas into high-fidelity UI.",descZh:"将设计想法转为高保真界面。",url:"https://www.usegalileo.ai",tags:["design","ui"],popularity:81,created:"2023-02-10"},
+{id:15,nameEn:"Uizard",nameZh:"Uizard",category:"Design",taglineEn:"Sketch to app",taglineZh:"草图转应用",descEn:"Transform sketches into editable mockups.",descZh:"把草图转换为可编辑原型。",url:"https://uizard.io",tags:["prototype","ui"],popularity:78,created:"2022-03-01"},
+{id:16,nameEn:"Figma AI",nameZh:"Figma AI",category:"Design",taglineEn:"Native AI in Figma",taglineZh:"Figma内置AI",descEn:"Generate copy, layers, and variants inside Figma.",descZh:"在Figma内生成文案与图层变体。",url:"https://www.figma.com",tags:["figma","ui"],popularity:86,created:"2024-02-20"},
+{id:17,nameEn:"Midjourney",nameZh:"Midjourney",category:"Image",taglineEn:"Creative image generation",taglineZh:"创意图像生成",descEn:"Discord-based AI for artistic visuals.",descZh:"基于Discord的创意图像生成。",url:"https://www.midjourney.com",tags:["image","creative"],popularity:98,created:"2022-07-01"},
+{id:18,nameEn:"DALL·E 3",nameZh:"DALL·E 3",category:"Image",taglineEn:"Precise image prompts",taglineZh:"高保真图像生成",descEn:"Image generation with accurate prompt following.",descZh:"高忠实度的提示词图像生成。",url:"https://openai.com/dall-e-3",tags:["image","illustration"],popularity:93,created:"2023-10-01"},
+{id:19,nameEn:"Stable Diffusion",nameZh:"Stable Diffusion",category:"Image",taglineEn:"Open-source image model",taglineZh:"开源图像模型",descEn:"Local and cloud diffusion for flexible pipelines.",descZh:"可本地与云端运行的开源扩散模型。",url:"https://stability.ai",tags:["open-source","image"],popularity:91,created:"2022-08-01"},
+{id:20,nameEn:"Ideogram",nameZh:"Ideogram",category:"Image",taglineEn:"Text-accurate art",taglineZh:"文本精准的美术",descEn:"Generates images with reliable typography.",descZh:"生成含文本的高质量图片。",url:"https://ideogram.ai",tags:["image","text"],popularity:85,created:"2023-08-15"},
+{id:21,nameEn:"Runway Gen-2",nameZh:"Runway Gen-2",category:"Video",taglineEn:"Text to video",taglineZh:"文生视频",descEn:"Video generation and editing for creators.",descZh:"面向创作者的文本生成视频与编辑。",url:"https://runwayml.com",tags:["video","editing"],popularity:90,created:"2023-03-20"},
+{id:22,nameEn:"Pika",nameZh:"Pika",category:"Video",taglineEn:"Instant video magic",taglineZh:"即时视频生成",descEn:"AI video creation with styles and controls.",descZh:"多风格可控的视频生成。",url:"https://pika.art",tags:["video","creative"],popularity:84,created:"2023-11-01"},
+{id:23,nameEn:"Descript",nameZh:"Descript",category:"Audio",taglineEn:"Edit audio by text",taglineZh:"文本编辑音频",descEn:"Podcast and video audio editing via transcripts.",descZh:"通过转录文本编辑播客与视频音频。",url:"https://www.descript.com",tags:["audio","podcast"],popularity:87,created:"2022-01-01"},
+{id:24,nameEn:"ElevenLabs",nameZh:"ElevenLabs",category:"Audio",taglineEn:"Realistic voice AI",taglineZh:"逼真语音生成",descEn:"Lifelike TTS and voice cloning.",descZh:"逼真的TTS与语音克隆。",url:"https://elevenlabs.io",tags:["tts","voice"],popularity:92,created:"2022-04-01"},
+{id:25,nameEn:"Notion AI",nameZh:"Notion AI",category:"Productivity",taglineEn:"Workspace intelligence",taglineZh:"工作区智能助理",descEn:"Summaries, writing, and task help inside Notion.",descZh:"Notion内的写作、总结与任务辅助。",url:"https://www.notion.so/product/ai",tags:["notes","productivity"],popularity:88,created:"2023-02-15"},
+{id:26,nameEn:"Airtable AI",nameZh:"Airtable AI",category:"Productivity",taglineEn:"AI for bases",taglineZh:"表格AI助手",descEn:"Automate bases with AI formulas and summaries.",descZh:"用AI公式与摘要自动化数据表。",url:"https://www.airtable.com",tags:["automation","data"],popularity:80,created:"2023-09-01"},
+{id:27,nameEn:"ClickUp Brain",nameZh:"ClickUp Brain",category:"Productivity",taglineEn:"Tasks with AI",taglineZh:"任务AI助手",descEn:"AI answers and summaries across tasks and docs.",descZh:"任务与文档的AI回答与摘要。",url:"https://clickup.com/brain",tags:["tasks","productivity"],popularity:77,created:"2024-01-05"},
+{id:28,nameEn:"Slite Ask",nameZh:"Slite Ask",category:"Productivity",taglineEn:"Docs Q&A",taglineZh:"文档问答",descEn:"Ask questions across team knowledge.",descZh:"在团队知识库中提问与检索。",url:"https://slite.com/ask",tags:["knowledge","search"],popularity:70,created:"2023-05-15"},
+{id:29,nameEn:"Mem X",nameZh:"Mem X",category:"Productivity",taglineEn:"Auto knowledge graph",taglineZh:"自动知识图谱",descEn:"Personal notes with AI linking and recall.",descZh:"AI自动链接与回忆的个人笔记。",url:"https://get.mem.ai",tags:["notes","memory"],popularity:76,created:"2023-04-01"},
+{id:30,nameEn:"Tana AI",nameZh:"Tana AI",category:"Productivity",taglineEn:"Structured thinking",taglineZh:"结构化思考",descEn:"Super-tagged workspace with AI commands.",descZh:"支持超级标签与AI命令的工作区。",url:"https://tana.inc",tags:["notes","tasks"],popularity:79,created:"2023-09-20"},
+{id:31,nameEn:"Synthesia",nameZh:"Synthesia",category:"Video",taglineEn:"AI avatars",taglineZh:"AI虚拟人",descEn:"Create videos with AI presenters.",descZh:"生成带AI虚拟人的视频。",url:"https://www.synthesia.io",tags:["avatar","video"],popularity:88,created:"2022-05-01"},
+{id:32,nameEn:"HeyGen",nameZh:"HeyGen",category:"Video",taglineEn:"Avatar + dubbing",taglineZh:"虚拟人配音",descEn:"Avatar videos with multi-language dubbing.",descZh:"多语种虚拟人视频与配音。",url:"https://www.heygen.com",tags:["avatar","voice"],popularity:85,created:"2023-06-01"},
+{id:33,nameEn:"RunPod",nameZh:"RunPod",category:"Infra",taglineEn:"GPU on demand",taglineZh:"按需GPU",descEn:"Serverless GPUs for AI workloads.",descZh:"面向AI工作负载的无服务器GPU。",url:"https://www.runpod.io",tags:["cloud","gpu"],popularity:86,created:"2022-09-01"},
+{id:34,nameEn:"Replicate",nameZh:"Replicate",category:"Infra",taglineEn:"Models as API",taglineZh:"模型即API",descEn:"Deploy community models via simple APIs.",descZh:"用简单API部署社区模型。",url:"https://replicate.com",tags:["api","models"],popularity:87,created:"2022-08-01"},
+{id:35,nameEn:"OctoAI",nameZh:"OctoAI",category:"Infra",taglineEn:"Optimized inference",taglineZh:"高效推理",descEn:"Inference stack for LLMs and diffusion.",descZh:"面向LLM与扩散模型的推理平台。",url:"https://octoai.cloud",tags:["inference","cloud"],popularity:83,created:"2023-01-10"},
+{id:36,nameEn:"Together AI",nameZh:"Together AI",category:"Infra",taglineEn:"Open model cloud",taglineZh:"开放模型云",descEn:"Serve open models with APIs and fine-tuning.",descZh:"开放模型的API与微调服务。",url:"https://www.together.ai",tags:["open","api"],popularity:84,created:"2023-04-15"},
+{id:37,nameEn:"Modal",nameZh:"Modal",category:"Infra",taglineEn:"Serverless compute",taglineZh:"无服务器计算",descEn:"Serverless for AI pipelines and batch jobs.",descZh:"用于AI流水线与批处理的无服务器。",url:"https://modal.com",tags:["serverless","pipeline"],popularity:82,created:"2022-02-01"},
+{id:38,nameEn:"Hugging Face",nameZh:"Hugging Face",category:"Community",taglineEn:"Models & datasets",taglineZh:"模型与数据社区",descEn:"Hub for models, datasets, and Spaces apps.",descZh:"模型、数据集与Spaces应用的社区。",url:"https://huggingface.co",tags:["community","models"],popularity:99,created:"2018-01-01"},
+{id:39,nameEn:"Papers with Code",nameZh:"Papers with Code",category:"Community",taglineEn:"Research + code",taglineZh:"论文与代码",descEn:"Papers linked with official implementations.",descZh:"论文与官方实现的索引。",url:"https://paperswithcode.com",tags:["research","code"],popularity:88,created:"2019-01-01"},
+{id:40,nameEn:"Cohere",nameZh:"Cohere",category:"LLM",taglineEn:"Enterprise LLMs",taglineZh:"企业LLM",descEn:"LLMs with enterprise features and retrieval.",descZh:"面向企业的LLM与检索能力。",url:"https://cohere.com",tags:["enterprise","llm"],popularity:82,created:"2022-07-01"},
+{id:41,nameEn:"Writer",nameZh:"Writer",category:"Productivity",taglineEn:"Brand-safe AI",taglineZh:"品牌安全写作",descEn:"Enterprise writing with guardrails.",descZh:"带有安全护栏的企业写作AI。",url:"https://writer.com",tags:["writing","enterprise"],popularity:78,created:"2022-05-01"},
+{id:42,nameEn:"Jasper",nameZh:"Jasper",category:"Marketing",taglineEn:"AI marketing",taglineZh:"营销写作AI",descEn:"Marketing copy and campaigns automation.",descZh:"营销文案与活动自动化。",url:"https://www.jasper.ai",tags:["marketing","writing"],popularity:85,created:"2021-06-01"},
+{id:43,nameEn:"Copy.ai",nameZh:"Copy.ai",category:"Marketing",taglineEn:"Copywriting co-pilot",taglineZh:"文案副驾",descEn:"Generate marketing and sales copy quickly.",descZh:"快速生成营销与销售文案。",url:"https://www.copy.ai",tags:["marketing","sales"],popularity:80,created:"2021-04-01"},
+{id:44,nameEn:"Notably",nameZh:"Notably",category:"Research",taglineEn:"User research AI",taglineZh:"用户研究AI",descEn:"Synthesize interviews and insights.",descZh:"汇总访谈并提炼洞察。",url:"https://www.notably.ai",tags:["research","insights"],popularity:73,created:"2022-11-01"},
+{id:45,nameEn:"Tome",nameZh:"Tome",category:"Presentation",taglineEn:"AI-native slides",taglineZh:"AI演示文稿",descEn:"Generate slide narratives from prompts.",descZh:"用提示词生成演示叙事。",url:"https://beta.tome.app",tags:["slides","story"],popularity:83,created:"2022-09-15"},
+{id:46,nameEn:"Beautiful.ai",nameZh:"Beautiful.ai",category:"Presentation",taglineEn:"Smart slides",taglineZh:"智能幻灯片",descEn:"Template-driven slide automation.",descZh:"模板驱动的幻灯片自动化。",url:"https://www.beautiful.ai",tags:["slides","design"],popularity:79,created:"2021-01-01"},
+{id:47,nameEn:"Gamma",nameZh:"Gamma",category:"Presentation",taglineEn:"Decks reinvented",taglineZh:"重塑演示文稿",descEn:"Docs + slides hybrid with AI.",descZh:"结合文档与幻灯片的AI工具。",url:"https://gamma.app",tags:["slides","docs"],popularity:81,created:"2022-04-20"},
+{id:48,nameEn:"Luma AI",nameZh:"Luma AI",category:"3D",taglineEn:"NeRF capture",taglineZh:"NeRF捕捉",descEn:"Capture and render 3D scenes via NeRF.",descZh:"通过NeRF捕捉并渲染3D场景。",url:"https://lumalabs.ai",tags:["3d","capture"],popularity:82,created:"2023-01-01"},
+{id:49,nameEn:"Kaedim",nameZh:"Kaedim",category:"3D",taglineEn:"2D to 3D",taglineZh:"2D转3D",descEn:"Generate 3D assets from images.",descZh:"从图片生成3D资产。",url:"https://www.kaedim3d.com",tags:["3d","assets"],popularity:75,created:"2022-06-01"},
+{id:50,nameEn:"Polycam",nameZh:"Polycam",category:"3D",taglineEn:"LiDAR scanning",taglineZh:"LiDAR扫描",descEn:"3D scanning using phones and LiDAR.",descZh:"用手机与LiDAR进行3D扫描。",url:"https://poly.cam",tags:["3d","scan"],popularity:78,created:"2021-07-01"},
+{id:51,nameEn:"Metaphor",nameZh:"Metaphor",category:"Search",taglineEn:"Prompt search",taglineZh:"提示词搜索",descEn:"Search web with prompt-like queries.",descZh:"用提示词式查询搜索网页。",url:"https://metaphor.systems",tags:["search","prompt"],popularity:72,created:"2022-10-01"},
+{id:52,nameEn:"Harvey",nameZh:"Harvey",category:"Legal",taglineEn:"AI for law",taglineZh:"法律AI",descEn:"Legal research and drafting assistant.",descZh:"法律检索与文书起草助手。",url:"https://www.harvey.ai",tags:["legal","draft"],popularity:74,created:"2023-03-01"},
+{id:53,nameEn:"CaseText CoCounsel",nameZh:"CoCounsel",category:"Legal",taglineEn:"Litigation AI",taglineZh:"诉讼AI",descEn:"AI assistant for legal workflows.",descZh:"面向法律工作流的AI助手。",url:"https://casetext.com",tags:["legal","research"],popularity:71,created:"2022-12-01"},
+{id:54,nameEn:"DoNotPay",nameZh:"DoNotPay",category:"Legal",taglineEn:"Consumer justice",taglineZh:"消费者法律助手",descEn:"Automate consumer legal actions.",descZh:"自动化消费者法律行动。",url:"https://donotpay.com",tags:["legal","consumer"],popularity:70,created:"2021-01-15"},
+{id:55,nameEn:"QuillBot",nameZh:"QuillBot",category:"Writing",taglineEn:"Paraphrase & grammar",taglineZh:"改写与语法",descEn:"Paraphrasing and grammar checking.",descZh:"改写与语法检查工具。",url:"https://quillbot.com",tags:["writing","grammar"],popularity:83,created:"2017-01-01"},
+{id:56,nameEn:"GrammarlyGO",nameZh:"GrammarlyGO",category:"Writing",taglineEn:"Contextual writing",taglineZh:"上下文写作",descEn:"Context-aware writing assistance.",descZh:"上下文感知的写作助手。",url:"https://www.grammarly.com/grammarlygo",tags:["writing","editing"],popularity:88,created:"2023-04-01"},
+{id:57,nameEn:"Sudowrite",nameZh:"Sudowrite",category:"Writing",taglineEn:"Fiction co-writer",taglineZh:"小说共创",descEn:"AI partner for creative writing.",descZh:"创意写作的AI伙伴。",url:"https://www.sudowrite.com",tags:["writing","creative"],popularity:76,created:"2021-05-01"},
+{id:58,nameEn:"Lex",nameZh:"Lex",category:"Writing",taglineEn:"Minimalist writer",taglineZh:"极简写作",descEn:"Clean editor with AI suggestions.",descZh:"简洁编辑器与AI建议。",url:"https://lex.page",tags:["writing","editor"],popularity:75,created:"2022-08-15"},
+{id:59,nameEn:"Runway Gen-1",nameZh:"Runway Gen-1",category:"Video",taglineEn:"Video-to-video",taglineZh:"视频转视频",descEn:"Stylize existing videos via prompts.",descZh:"用提示词风格化现有视频。",url:"https://runwayml.com",tags:["video","style"],popularity:82,created:"2022-12-01"},
+{id:60,nameEn:"Play.ht",nameZh:"Play.ht",category:"Audio",taglineEn:"Voice library",taglineZh:"丰富语音库",descEn:"Extensive TTS voices with API.",descZh:"大量TTS语音与API。",url:"https://play.ht",tags:["tts","api"],popularity:80,created:"2021-03-01"},
+{id:61,nameEn:"Murf",nameZh:"Murf",category:"Audio",taglineEn:"Voiceovers",taglineZh:"配音",descEn:"Voiceovers for videos and ads.",descZh:"为视频与广告生成配音。",url:"https://murf.ai",tags:["voice","ads"],popularity:77,created:"2021-06-01"},
+{id:62,nameEn:"Soundful",nameZh:"Soundful",category:"Audio",taglineEn:"AI music",taglineZh:"AI音乐",descEn:"Generate royalty-free tracks.",descZh:"生成免版权音乐。",url:"https://soundful.com",tags:["music","audio"],popularity:74,created:"2021-07-15"},
+{id:63,nameEn:"Suno",nameZh:"Suno",category:"Audio",taglineEn:"Song generation",taglineZh:"歌曲生成",descEn:"Create songs with lyrics and vocals.",descZh:"生成带歌词与人声的歌曲。",url:"https://suno.ai",tags:["music","creative"],popularity:90,created:"2023-12-15"},
+{id:64,nameEn:"Leonardo AI",nameZh:"Leonardo AI",category:"Image",taglineEn:"Game assets",taglineZh:"游戏素材",descEn:"Generate game-ready art assets.",descZh:"生成游戏就绪的艺术素材。",url:"https://leonardo.ai",tags:["game","image"],popularity:83,created:"2022-09-20"},
+{id:65,nameEn:"Krea",nameZh:"Krea",category:"Image",taglineEn:"Real-time gen",taglineZh:"实时生成",descEn:"Real-time image generation canvas.",descZh:"实时图像生成画布。",url:"https://www.krea.ai",tags:["image","realtime"],popularity:82,created:"2023-09-01"},
+{id:66,nameEn:"Playground AI",nameZh:"Playground AI",category:"Image",taglineEn:"Free image lab",taglineZh:"免费图像实验室",descEn:"Image generation and editing sandbox.",descZh:"图像生成与编辑沙盒。",url:"https://playground.com",tags:["image","edit"],popularity:81,created:"2022-10-15"},
+{id:67,nameEn:"Canva AI",nameZh:"Canva AI",category:"Design",taglineEn:"Magic features",taglineZh:"神奇设计功能",descEn:"Magic tools for design and content.",descZh:"设计与内容的AI魔法工具。",url:"https://www.canva.com",tags:["design","content"],popularity:95,created:"2023-03-15"},
+{id:68,nameEn:"Firefly",nameZh:"Firefly",category:"Image",taglineEn:"Adobe generative",taglineZh:"Adobe生成式",descEn:"Adobe's generative image suite.",descZh:"Adobe推出的生成式图像套件。",url:"https://www.adobe.com/products/firefly.html",tags:["image","design"],popularity:88,created:"2023-05-01"},
+{id:69,nameEn:"Remove.bg",nameZh:"Remove.bg",category:"Image",taglineEn:"Background removal",taglineZh:"去背景",descEn:"Instant background removal for photos.",descZh:"照片即时去背景。",url:"https://remove.bg",tags:["image","tooling"],popularity:90,created:"2018-01-01"},
+{id:70,nameEn:"Cleanup.pictures",nameZh:"Cleanup.pictures",category:"Image",taglineEn:"Erase objects",taglineZh:"移除物体",descEn:"Remove unwanted elements from photos.",descZh:"移除照片中多余元素。",url:"https://cleanup.pictures",tags:["image","retouch"],popularity:82,created:"2021-01-01"},
+{id:71,nameEn:"Heyday",nameZh:"Heyday",category:"Productivity",taglineEn:"Memory helper",taglineZh:"记忆助手",descEn:"Surfacing past reads as you browse.",descZh:"浏览时浮现你读过的内容。",url:"https://www.heyday.xyz",tags:["memory","productivity"],popularity:72,created:"2022-03-01"},
+{id:72,nameEn:"Magical AI",nameZh:"Magical AI",category:"Productivity",taglineEn:"Calendar & email",taglineZh:"日历邮件助手",descEn:"Automate scheduling and outreach.",descZh:"自动化排程与外联。",url:"https://www.getmagical.com",tags:["calendar","email"],popularity:70,created:"2022-08-01"},
+{id:73,nameEn:"Motion",nameZh:"Motion",category:"Productivity",taglineEn:"Auto-schedule",taglineZh:"自动排程",descEn:"AI schedules tasks on your calendar.",descZh:"AI在日历中自动安排任务。",url:"https://www.usemotion.com",tags:["tasks","calendar"],popularity:83,created:"2021-01-01"},
+{id:74,nameEn:"Superhuman AI",nameZh:"Superhuman AI",category:"Productivity",taglineEn:"Email speed",taglineZh:"极速邮件",descEn:"AI email triage and drafting.",descZh:"AI邮件分拣与草稿。",url:"https://superhuman.com",tags:["email","productivity"],popularity:75,created:"2023-06-15"},
+{id:75,nameEn:"Hume",nameZh:"Hume",category:"Voice",taglineEn:"Emotional voice API",taglineZh:"情感语音API",descEn:"Voice agents with emotion understanding.",descZh:"理解情感的语音代理。",url:"https://www.hume.ai",tags:["voice","api"],popularity:78,created:"2023-02-01"},
+{id:76,nameEn:"LiveKit Agents",nameZh:"LiveKit Agents",category:"Voice",taglineEn:"Real-time voice AI",taglineZh:"实时语音AI",descEn:"Voice + WebRTC agents for real-time calls.",descZh:"实时通话的语音与WebRTC代理。",url:"https://livekit.io",tags:["voice","realtime"],popularity:77,created:"2023-12-01"},
+{id:77,nameEn:"Speechmatics",nameZh:"Speechmatics",category:"Voice",taglineEn:"ASR engine",taglineZh:"语音识别引擎",descEn:"Accurate multilingual speech recognition.",descZh:"多语种高精度语音识别。",url:"https://www.speechmatics.com",tags:["asr","voice"],popularity:74,created:"2021-01-15"},
+{id:78,nameEn:"Whisper API",nameZh:"Whisper API",category:"Voice",taglineEn:"OpenAI ASR",taglineZh:"OpenAI语音识别",descEn:"Robust speech-to-text via API.",descZh:"通过API提供的强大语音转文本。",url:"https://platform.openai.com/docs/guides/speech-to-text",tags:["asr","api"],popularity:92,created:"2022-12-01"},
+{id:79,nameEn:"VoxScript",nameZh:"VoxScript",category:"Voice",taglineEn:"Voice search",taglineZh:"语音搜索",descEn:"Voice-enabled search for web content.",descZh:"可语音检索网页内容。",url:"https://voxscript.ai",tags:["voice","search"],popularity:68,created:"2023-07-01"},
+{id:80,nameEn:"Poe",nameZh:"Poe",category:"Chat",taglineEn:"Multi-bot hub",taglineZh:"多模型聊天枢纽",descEn:"Hub to chat with multiple AI models.",descZh:"与多种AI模型聊天的枢纽。",url:"https://poe.com",tags:["chat","hub"],popularity:85,created:"2023-02-01"},
+{id:81,nameEn:"Character.AI",nameZh:"Character.AI",category:"Chat",taglineEn:"Role-play bots",taglineZh:"角色扮演AI",descEn:"Create and chat with characters.",descZh:"创建并与角色聊天。",url:"https://beta.character.ai",tags:["chat","roleplay"],popularity:90,created:"2022-09-01"},
+{id:82,nameEn:"Pi AI",nameZh:"Pi AI",category:"Chat",taglineEn:"Friendly companion",taglineZh:"友好伙伴",descEn:"Personal supportive chat companion.",descZh:"贴心的个人聊天伙伴。",url:"https://pi.ai",tags:["chat","support"],popularity:78,created:"2023-05-01"},
+{id:83,nameEn:"Forefront",nameZh:"Forefront",category:"Chat",taglineEn:"Custom GPTs",taglineZh:"自定义GPT",descEn:"Chat with custom GPT-based bots.",descZh:"与自定义GPT机器人聊天。",url:"https://www.forefront.ai",tags:["chat","custom"],popularity:70,created:"2023-03-15"},
+{id:84,nameEn:"Wudi AI",nameZh:"Wudi AI",category:"Sales",taglineEn:"Outbound AI",taglineZh:"外呼AI",descEn:"AI for outbound sales emails and calls.",descZh:"面向外呼销售邮件与电话的AI。",url:"https://www.wudi.ai",tags:["sales","outbound"],popularity:66,created:"2023-09-01"},
+{id:85,nameEn:"Regie.ai",nameZh:"Regie.ai",category:"Sales",taglineEn:"Sales sequences",taglineZh:"销售序列",descEn:"Generate sales sequences and messaging.",descZh:"生成销售序列与话术。",url:"https://www.regie.ai",tags:["sales","sequence"],popularity:72,created:"2022-02-01"},
+{id:86,nameEn:"Apollo AI",nameZh:"Apollo AI",category:"Sales",taglineEn:"Prospecting",taglineZh:"获客",descEn:"Prospecting with AI enrichment.",descZh:"AI丰富潜客与外联。",url:"https://www.apollo.io",tags:["sales","prospect"],popularity:74,created:"2023-07-01"},
+{id:87,nameEn:"Cresta",nameZh:"Cresta",category:"CX",taglineEn:"Contact center AI",taglineZh:"客服AI",descEn:"Real-time coaching for agents.",descZh:"实时指导客服坐席。",url:"https://cresta.com",tags:["support","voice"],popularity:76,created:"2021-04-01"},
+{id:88,nameEn:"LangChain",nameZh:"LangChain",category:"Dev",taglineEn:"LLM tooling",taglineZh:"LLM工具链",descEn:"Framework for LLM apps with chains and agents.",descZh:"用于构建LLM应用的框架。",url:"https://www.langchain.com",tags:["framework","llm"],popularity:95,created:"2022-10-01"},
+{id:89,nameEn:"LlamaIndex",nameZh:"LlamaIndex",category:"Dev",taglineEn:"Data for LLMs",taglineZh:"LLM数据层",descEn:"Data framework for retrieval-augmented apps.",descZh:"面向检索增强应用的数据框架。",url:"https://www.llamaindex.ai",tags:["retrieval","framework"],popularity:88,created:"2022-11-01"},
+{id:90,nameEn:"Flowise",nameZh:"Flowise",category:"Dev",taglineEn:"Visual LLM flows",taglineZh:"可视化LLM流程",descEn:"Drag-drop LLM apps builder.",descZh:"拖拽式LLM应用搭建。",url:"https://flowiseai.com",tags:["lowcode","llm"],popularity:80,created:"2023-04-01"},
+{id:91,nameEn:"Dust",nameZh:"Dust",category:"Dev",taglineEn:"LLM workspace",taglineZh:"LLM工作区",descEn:"Workspace to design and ship LLM features.",descZh:"设计与交付LLM功能的工作区。",url:"https://dust.tt",tags:["workspace","llm"],popularity:78,created:"2023-05-10"},
+{id:92,nameEn:"SuperAGI",nameZh:"SuperAGI",category:"Agents",taglineEn:"Open-source agents",taglineZh:"开源代理",descEn:"Agent framework for autonomous tasks.",descZh:"用于自主任务的代理框架。",url:"https://superagi.com",tags:["agents","open-source"],popularity:74,created:"2023-06-01"},
+{id:93,nameEn:"AutoGPT",nameZh:"AutoGPT",category:"Agents",taglineEn:"Autonomous experiments",taglineZh:"自主实验",descEn:"Community project for autonomous agents.",descZh:"用于自主代理实验的社区项目。",url:"https://github.com/Significant-Gravitas/Auto-GPT",tags:["agents","experimental"],popularity:82,created:"2023-04-10"},
+{id:94,nameEn:"BabyAGI",nameZh:"BabyAGI",category:"Agents",taglineEn:"Task loops",taglineZh:"任务循环",descEn:"Minimal task-based agent loop.",descZh:"最小化的任务循环代理。",url:"https://github.com/yoheinakajima/babyagi",tags:["agents","loop"],popularity:68,created:"2023-04-15"},
+{id:95,nameEn:"OpenAI Assistants",nameZh:"OpenAI Assistants",category:"Agents",taglineEn:"Hosted agents",taglineZh:"托管代理",descEn:"Hosted tools, retrieval, code interpreter.",descZh:"托管工具调用、检索与代码解释。",url:"https://platform.openai.com/docs/assistants",tags:["agents","api"],popularity:94,created:"2023-11-06"},
+{id:96,nameEn:"Bolt.new",nameZh:"Bolt.new",category:"Dev",taglineEn:"Instant apps",taglineZh:"即时应用",descEn:"Generate full-stack apps quickly.",descZh:"快速生成全栈应用。",url:"https://bolt.new",tags:["fullstack","gen"],popularity:79,created:"2023-12-10"},
+{id:97,nameEn:"Vercel AI SDK",nameZh:"Vercel AI SDK",category:"Dev",taglineEn:"Edge AI toolkit",taglineZh:"边缘AI工具包",descEn:"Streaming AI UI toolkit for React/Next.",descZh:"用于React/Next的流式AI界面工具。",url:"https://sdk.vercel.ai",tags:["sdk","ui"],popularity:85,created:"2023-05-01"},
+{id:98,nameEn:"Supabase Vector",nameZh:"Supabase Vector",category:"Infra",taglineEn:"Vector store",taglineZh:"向量存储",descEn:"Managed PG vector for AI apps.",descZh:"托管Postgres向量存储。",url:"https://supabase.com/vector",tags:["database","vector"],popularity:83,created:"2023-08-01"},
+{id:99,nameEn:"Pinecone",nameZh:"Pinecone",category:"Infra",taglineEn:"Vector database",taglineZh:"向量数据库",descEn:"Managed vector DB for search and AI.",descZh:"面向搜索与AI的向量数据库。",url:"https://www.pinecone.io",tags:["vector","database"],popularity:90,created:"2021-05-01"},
+{id:100,nameEn:"Weaviate",nameZh:"Weaviate",category:"Infra",taglineEn:"Open-source vector",taglineZh:"开源向量库",descEn:"Vector database with modules and hybrid search.",descZh:"带模块与混合搜索的向量数据库。",url:"https://weaviate.io",tags:["vector","search"],popularity:88,created:"2021-04-01"},
+];
+function setLang(lang){state.lang=lang;const map=i18nMap[lang];document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.getAttribute("data-i18n");if(map[k])el.textContent=map[k];});document.documentElement.lang=lang;document.title=lang==="en"?"aihelp.me | Global AI Tools Directory - Discover Top AI Tools":"aihelp.me | 全球AI工具导航站 - 发现顶级AI工具";document.getElementById("lang-label").textContent=lang==="en"?"EN / 中文":"中文 / EN";renderTags();renderCategories();renderTools();}
+function buildCategoryOptions(){const select=document.getElementById("category");const cats=[...new Set(tools.map(t=>t.category))].sort();cats.forEach(c=>{const opt=document.createElement("option");opt.value=c;opt.textContent=c;select.appendChild(opt);});}
+function renderTags(){const container=document.getElementById("tag-container");container.innerHTML="";const tags=new Set();tools.forEach(t=>t.tags.forEach(tag=>tags.add(tag)));[...tags].sort().forEach(tag=>{const btn=document.createElement("button");btn.className="px-3 py-1 rounded-full border border-slate-200 text-xs hover:bg-slate-100 hover-lift transition-all duration-300";btn.textContent=tag;btn.dataset.tag=tag;btn.onclick=()=>{state.tag=state.tag===tag?"":tag;renderTools();};if(state.tag===tag)btn.classList.add("bg-primary/10","border-primary/50","text-primary");container.appendChild(btn);});}
+function renderCategories(){const grid=document.getElementById("category-grid");grid.innerHTML="";const map={};tools.forEach(t=>{map[t.category]=(map[t.category]||0)+1;});Object.entries(map).sort().forEach(([cat,count])=>{const card=document.createElement("div");card.className="p-5 rounded-xl border border-slate-200/50 bg-white/80 backdrop-blur-sm hover-lift cursor-pointer";card.innerHTML=`<div class="flex items-center justify-between mb-2"><span class="font-semibold">${cat}</span><span class="text-xs text-slate-600">${count}</span></div><p class="text-sm text-slate-700">${state.lang==="en"?"Curated tools":"收录工具"} · ${count}</p>`;card.onclick=()=>{state.category=cat;document.getElementById("category").value=cat;document.getElementById("tools").scrollIntoView({behavior:"smooth"});renderTools();};grid.appendChild(card);});}
+function filterAndSort(){let list=tools.filter(t=>{const text=(state.lang==="en"?t.nameEn:t.nameZh)+" "+(state.lang==="en"?t.descEn:t.descZh)+" "+t.tags.join(" ");return text.toLowerCase().includes(state.search.toLowerCase());}).filter(t=>!state.category||t.category===state.category).filter(t=>!state.tag||t.tags.includes(state.tag));if(state.sort==="name"){list.sort((a,b)=>a.nameEn.localeCompare(b.nameEn));}else if(state.sort==="new"){list.sort((a,b)=>new Date(b.created)-new Date(a.created));}else{list.sort((a,b)=>b.popularity-a.popularity);}return list;}
+function renderTools(){const grid=document.getElementById("tool-grid");grid.innerHTML="";const list=filterAndSort();document.getElementById("result-stats").textContent=`${list.length} / ${tools.length} ${state.lang==="en"?"tools":"个工具"}`;list.forEach(t=>{const card=document.createElement("article");card.className="rounded-xl border border-slate-200/50 bg-white/80 backdrop-blur-sm hover-lift p-5 flex flex-col gap-3";card.innerHTML=`<div class="flex items-start justify-between gap-3"><div><p class="text-xs uppercase tracking-wide text-primary">${t.category}</p><h3 class="font-semibold text-lg">${state.lang==="en"?t.nameEn:t.nameZh}</h3><p class="text-sm text-slate-700">${state.lang==="en"?t.taglineEn:t.taglineZh}</p></div><button class="rounded-md p-2 hover:bg-slate-100/50 transition-colors duration-300" aria-label="Open detail" data-id="${t.id}"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></button></div><div class="flex flex-wrap gap-2 text-xs">${t.tags.map(tag=>`<span class="px-2 py-1 rounded-full bg-slate-100 text-slate-700">${tag}</span>`).join("")}</div><div class="flex items-center justify-between text-xs text-slate-600"><span>${state.lang==="en"?"Popularity":"热度"} ${t.popularity}</span><span>${state.lang==="en"?"Updated":"更新"} ${t.created}</span></div>`;card.querySelector("button").onclick=()=>openDetail(t);grid.appendChild(card);});lucide.createIcons();}
+function openDetail(t){const dialog=document.getElementById("detail-dialog");document.getElementById("detail-category").textContent=t.category;document.getElementById("detail-title").textContent=state.lang==="en"?t.nameEn:t.nameZh;document.getElementById("detail-desc").textContent=state.lang==="en"?t.descEn:t.descZh;document.getElementById("detail-tags").innerHTML=t.tags.map(tag=>`<span class="px-2 py-1 rounded-full bg-slate-100 text-slate-700 text-xs">${tag}</span>`).join("");const link=document.getElementById("detail-link");link.href=t.url;link.rel="nofollow noopener";document.getElementById("detail-meta").textContent=`${state.lang==="en"?"Launched":"上线"} ${t.created} · ${state.lang==="en"?"Popularity":"热度"} ${t.popularity}`;dialog.showModal();lucide.createIcons();buildJSONLD(t);}
+function buildJSONLD(t){const data={ "@context":"https://schema.org", "@type":"Product", name:state.lang==="en"?t.nameEn:t.nameZh, description:state.lang==="en"?t.descEn:t.descZh, url:"https://aihelp.me/tool/"+encodeURIComponent(t.nameEn.toLowerCase().replace(/\s+/g,"-")), applicationCategory:t.category, operatingSystem:"Any", aggregateRating:{ "@type":"AggregateRating", ratingValue:t.popularity/10, reviewCount:t.popularity*10 }, offers:{ "@type":"Offer", url:t.url, price:"0", priceCurrency:"USD" } };let script=document.getElementById("jsonld-detail");if(!script){script=document.createElement("script");script.type="application/ld+json";script.id="jsonld-detail";document.head.appendChild(script);}script.textContent=JSON.stringify(data);}
+function initJSONLDList(){const list=tools.slice(0,20).map(t=>({ "@type":"ListItem", position:t.id, url:"https://aihelp.me/tool/"+encodeURIComponent(t.nameEn.toLowerCase().replace(/\s+/g,"-")), name:t.nameEn }));const data={ "@context":"https://schema.org", "@type":"ItemList", itemListElement:list};const script=document.createElement("script");script.type="application/ld+json";script.id="jsonld-list";script.textContent=JSON.stringify(data);document.head.appendChild(script);}
+function bindEvents(){document.getElementById("lang-toggle").onclick=()=>{setLang(state.lang==="en"?"zh":"en");};document.getElementById("search").oninput=e=>{state.search=e.target.value;renderTools();};document.getElementById("category").onchange=e=>{state.category=e.target.value;renderTools();};document.getElementById("sort").onchange=e=>{state.sort=e.target.value;renderTools();};document.querySelectorAll("[data-action='reset-filters']").forEach(btn=>btn.onclick=()=>{state.search="";state.category="";state.tag="";document.getElementById("search").value="";document.getElementById("category").value="";document.getElementById("sort").value="hot";renderTools();});document.querySelectorAll("[data-action='scroll-tools']").forEach(btn=>btn.onclick=()=>document.getElementById("tools").scrollIntoView({behavior:"smooth"}));document.querySelectorAll("[data-action='scroll-about']").forEach(btn=>btn.onclick=()=>document.getElementById("about").scrollIntoView({behavior:"smooth"}));document.querySelectorAll("[data-action='close-detail']").forEach(btn=>btn.onclick=()=>document.getElementById("detail-dialog").close());}
+function init(){buildCategoryOptions();renderTags();setLang("en");renderTools();initJSONLDList();bindEvents();lucide.createIcons();}
+document.addEventListener("DOMContentLoaded",init);
+  </script>
+</body>
+</html>
